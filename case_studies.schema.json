@@ -1,21 +1,21 @@
 {
-    "type": "object",
-    "required": ["case_studies"],
-    "properties": {
-      "case_studies": {
-        "type": "array",
-        "items": {
-          "type": "object",
-          "required": ["id", "case_study", "description", "url"],
-          "properties": {
-            "id": { "type": "integer" },
-            "case_study": { "type": "string" },
-            "description": { "type": "string" },
-            "url": { "type": "string", "pattern": "^https?://.+" }
-          },
-          "additionalProperties": false
-        }
+  "type": "object",
+  "required": ["case_studies"],
+  "properties": {
+    "case_studies": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "case_study", "description", "url"],
+        "properties": {
+          "id": { "type": "integer" },
+          "case_study": { "type": "string" },
+          "description": { "type": "string" },
+          "url": { "type": "string", "pattern": "^https?://.+" }
+        },
+        "additionalProperties": false
       }
-    },
-    "additionalProperties": false
-  }
+    }
+  },
+  "additionalProperties": false
+}
